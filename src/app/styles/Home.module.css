@@ -1,0 +1,12 @@
+.blogList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.postCard {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}

@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id          Int      @id @default(autoincrement())
+  title       String
+  image       String   @default("") // Default to an empty string
+  description String   @default("") // Default to an empty string
+  date        DateTime @default(now()) // Default to the current date and time
+  author      String?
+}
+
