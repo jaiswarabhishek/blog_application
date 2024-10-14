@@ -1,6 +1,5 @@
 // app/api/posts/[id]/route.js
-// import { PrismaClient } from "@prisma/client";
-const {PrismaClient} = require("@prisma/client")
+import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
