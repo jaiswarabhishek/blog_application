@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import BlogDetail from "../../../components/BlogDetail"; // Adjust the path as needed
+import BlogDetail from "../../components/BlogDetail"; // Adjust the path as needed
 import useSWR from "swr";
 
 // Fetcher function to fetch the data
