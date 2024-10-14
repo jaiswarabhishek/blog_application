@@ -1,10 +1,8 @@
 import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server";
 
-const prisma = global.prisma || new PrismaClient();
-if (!global.prisma) {
-  global.prisma = prisma;
-}
+const prisma = new PrismaClient();
+
 
 export async function GET(req, { params }) {
   const { id } = params;
